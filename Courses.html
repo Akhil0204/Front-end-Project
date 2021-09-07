@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSet</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-graduation-cap"></i>SkillSet</a>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="Home.html" class="active" >home</a></li>
+            <li><a href="About.html" class="active" >about</a></li>
+            <li><a href="Teacher.html" class="active" >teacher</a></li>
+            <li><a href="Courses.html" class="active" >course</a></li>
+            <li><a href="Review.html" class="active" >review</a></li>
+            <li><a href="Contact.html" class="active" >contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="fas fa-bars" id="bars" onclick="navbarMobile()">
+    </div>
+
+  <div class="hideMobileNavbar" id="mobileNavbar">
+       <ul class="mobileNavbarList">
+      <li><a href="Home.html" class="active">home</a></li>
+      <li><a href="About.html" class="active">about</a></li>
+      <li><a href="Teacher.html" class="active">teacher</a></li>
+      <li><a href="Courses.html" class="active">course</a></li>
+      <li><a href="Review.html" class="active">review</a></li>
+      <li><a href="Contact.html" class="active">contact</a></li>
+    </ul>
+  </div>
+    
+    </header>
+    
+<!-- header section ends -->
+
+<!-- course section starts  -->
+
+<section id="course" class="course">
+
+    <h1 class="heading">our courses</h1>
+    <h3 class="title">upgrade your skills with newest courses and learn from the comfort of your home</h3>
+    
+    
+    <div class="box-container">
+    
+        <div class="box">
+            <i class="fab fa-html5"></i>
+            <h3>html5</h3>
+            <p> This Course has been designed for beginners in HTML5 to make them understand
+                 the basic-to-advanced concepts of the subject.Start learning html now. </p>
+        </div>
+    
+        <div class="box">
+            <i class="fab fa-css3-alt"></i>
+            <h3>css3</h3>
+            <p>CSS describes how HTML elements should be displayed. This Course will teach 
+                you CSS from basic to advanced. Start learning CSS. </p>
+        </div>
+    
+        <div class="box">
+            <i class="fab fa-js-square"></i>
+            <h3>javascript</h3>
+            <p>Javascript is the most popular programming language in the world and that 
+                makes it a programmer’s great choice.Start learning JavaScript now. </p>
+        </div>
+    
+        <div class="box">
+            <i class="fas fa-code"></i>
+            <h3>web development</h3>
+            <p> Learn how to build a website, and the most relevant web development frameworks 
+                used today in the tech industry Learn web development from top-rated instructors. </p>
+        </div>
+    
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>seo marketing</h3>
+            <p>This course is the first within the SEO Specialization and it is intended to 
+                give you a taste of SEO with some fun practices to get seen in Google. </p>
+        </div>
+    
+        <div class="box">
+            <i class="fas fa-paint-brush"></i>
+            <h3>graphic design</h3>
+            <p>Through visual examples, this course will teach you the fundamentals of 
+                graphic design. Learn what you need to know to work in motion graphics, 
+                interface and editorial design. </p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-database"></i>
+            <h3>data analytics</h3>
+            <p>Build career confidence as you master essential data tools and technologies. 
+                Enrol now! Build the skills to launch a successful Data Analyst career.
+                 No experience required. </p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-camera"></i>
+            <h3>video editing / videography </h3>
+            <p> Enroll for this free video editing course and get free certificate. 
+                In this course we have explained how to create a video, Premiere Pro 
+                & a brief understanding of the process. </p>
+        </div>
+    
+    </div>
+    
+    </section>
+    
+<!-- course section ends -->
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/main.js"></script>
+
+<script> function navbarMobile(){
+
+    if(document.getElementById('mobileNavbar').classList[0] ==='hideMobileNavbar')
+
+    {document.getElementById('mobileNavbar').classList.replace('hideMobileNavbar','showMobileNavbar')
+        }
+
+    else{document.getElementById('mobileNavbar').classList.replace('showMobileNavbar','hideMobileNavbar')
+        }
+    }
+  </script>
+    
+</body>
+</html>

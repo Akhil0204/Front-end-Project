@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSet</title>
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-graduation-cap"></i>SkillSet</a>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="Home.html" class="active" >home</a></li>
+            <li><a href="About.html" class="active" >about</a></li>
+            <li><a href="Teacher.html" class="active" >teacher</a></li>
+            <li><a href="Courses.html" class="active" >course</a></li>
+            <li><a href="Review.html" class="active" >review</a></li>
+            <li><a href="Contact.html" class="active" >contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="fas fa-bars" id="bars" onclick="navbarMobile()">
+    </div>
+
+  <div class="hideMobileNavbar" id="mobileNavbar">
+       <ul class="mobileNavbarList">
+      <li><a href="Home.html" class="active">home</a></li>
+      <li><a href="About.html" class="active">about</a></li>
+      <li><a href="Teacher.html" class="active">teacher</a></li>
+      <li><a href="Courses.html" class="active">course</a></li>
+      <li><a href="Review.html" class="active">review</a></li>
+      <li><a href="Contact.html" class="active">contact</a></li>
+    </ul>
+  </div>
+    
+    </header>
+    
+<!-- header section ends -->
+    
+    
+<!-- review section starts  -->
+
+<section id="review" class="review">
+
+    <h1 class="heading">students reviews</h1>
+    <h3 class="title">what our students says about us</h3>
+    
+    <div class="box-container">
+    
+        <div class="box">
+            <img src="/img/Review1.jpg" alt="">
+            <h3>David</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corporis?</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="/img/Review2.jpg" alt="">
+            <h3>Sofia</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corporis?</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="/img/Review3.jpg" alt="">
+            <h3>Kevin</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corporis?</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="/img/Review4.jpg" alt="">
+            <h3>Angela</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corporis?</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="/img/Review5.jpg" alt="">
+            <h3>Jason</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corporis?</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="/img/Review6.jpg" alt="">
+            <h3>Melina</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corporis?</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    
+    </div>
+    
+    </section>
+    
+<!-- review section ends -->
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/main.js"></script>
+
+<script> function navbarMobile(){
+
+    if(document.getElementById('mobileNavbar').classList[0] ==='hideMobileNavbar')
+
+    {document.getElementById('mobileNavbar').classList.replace('hideMobileNavbar','showMobileNavbar')
+        }
+
+    else{document.getElementById('mobileNavbar').classList.replace('showMobileNavbar','hideMobileNavbar')
+        }
+    }
+  </script>
+
+</body>
+</html>

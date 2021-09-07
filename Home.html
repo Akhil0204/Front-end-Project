@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillSet</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      
+    <!-- header section starts  -->
+
+    <header>
+        
+      <a href="#" class="logo"><i class="fas fa-graduation-cap"></i>SkillSet</a>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="Home.html" class="active">home</a></li>
+          <li><a href="About.html" class="active">about</a></li>
+          <li><a href="Teacher.html" class="active">teacher</a></li>
+          <li><a href="Courses.html" class="active">course</a></li>
+          <li><a href="Review.html" class="active">review</a></li>
+          <li><a href="Contact.html" class="active">contact</a></li>
+        </ul>
+      </nav>
+
+     <div class="fas fa-bars" id="bars" onclick="navbarMobile()">
+      </div>
+
+    <div class="hideMobileNavbar" id="mobileNavbar">
+         <ul class="mobileNavbarList">
+        <li><a href="Home.html" class="active">home</a></li>
+        <li><a href="About.html" class="active">about</a></li>
+        <li><a href="Teacher.html" class="active">teacher</a></li>
+        <li><a href="Courses.html" class="active">course</a></li>
+        <li><a href="Review.html" class="active">review</a></li>
+        <li><a href="Contact.html" class="active">contact</a></li>
+      </ul>
+    </div>
+      
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h1>learn online from home</h1>
+        <p>
+          Welcome to one of the biggest and best learning online platforms
+          trusted by hundreds of thousands of users all over the world. It is
+          one of the most genuine online learning platforms where you are taught
+          by professional experts.
+        </p>
+        <a href="#"><button>discover more</button></a>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>trending courses</h3>
+          <p>
+            You can choose from courses which are valuable to learn. We offer
+            the courses at affordable price starting at just Rs 799.
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-fire"></i>
+          <h3>free trial</h3>
+          <p>
+            You can take a free 3-day trial for any one of the courses before
+            even starting the course without even paying a single penny.
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-award"></i>
+          <h3>certifications</h3>
+          <p>
+            After completing a course, you will get a certificate of completion
+            and a certificate of excellence if you pass the course with 75% marks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <section class="footer">
+      <div class="icons">
+        <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/LOGIN" class="fab fa-twitter"></a>
+        <a
+          href="https://www.instagram.com/accounts/login/"
+          class="fab fa-instagram"
+        ></a>
+        <a href="https://github.com/login" class="fab fa-github"></a>
+      </div>
+
+      <div class="credit">
+        created by <span>Abhishek and Akhil</span> | all rights reserved.
+      </div>
+    </section>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/main.js"></script>
+
+    <script> function navbarMobile(){
+
+        if(document.getElementById('mobileNavbar').classList[0] ==='hideMobileNavbar')
+
+        {document.getElementById('mobileNavbar').classList.replace('hideMobileNavbar','showMobileNavbar')
+            }
+
+        else{document.getElementById('mobileNavbar').classList.replace('showMobileNavbar','hideMobileNavbar')
+            }
+        }
+      </script>
+
+  </body>
+</html>

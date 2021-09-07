@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSet</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-graduation-cap"></i>SkillSet</a>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="Home.html" class="active" >home</a></li>
+            <li><a href="About.html" class="active" >about</a></li>
+            <li><a href="Teacher.html" class="active" >teacher</a></li>
+            <li><a href="Courses.html" class="active" >course</a></li>
+            <li><a href="Review.html" class="active" >review</a></li>
+            <li><a href="Contact.html" class="active" >contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="fas fa-bars" id="bars" onclick="navbarMobile()">
+    </div>
+
+  <div class="hideMobileNavbar" id="mobileNavbar">
+       <ul class="mobileNavbarList">
+      <li><a href="Home.html" class="active">home</a></li>
+      <li><a href="About.html" class="active">about</a></li>
+      <li><a href="Teacher.html" class="active">teacher</a></li>
+      <li><a href="Courses.html" class="active">course</a></li>
+      <li><a href="Review.html" class="active">review</a></li>
+      <li><a href="Contact.html" class="active">contact</a></li>
+    </ul>
+  </div>
+    
+    </header>
+    
+<!-- header section ends -->
+    
+<!-- teacher section starts  -->
+
+<section id="teacher" class="teacher">
+
+    <h1 class="heading">our teachers</h1>
+    <h3 class="title">meet professional trainers</h3>
+    
+    <div class="card-container">
+    
+        <div class="card">
+            <img src="/img/Teacher1.jpg" alt="">
+            <h3>Mr.Jack Anderson</h3>
+            <p>i love teaching</p>
+            <p>skilled in web development</p>
+            <div class="icons">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-github"></a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="/img/Teacher2.jpg" alt="">
+            <h3>Mrs.Henley</h3>
+            <p>Teaching is my passion</p>
+            <p>the best in designing</p>
+            <div class="icons">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-github"></a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="/img/Teacher3.jpg" alt="">
+            <h3>Mr.Daniel</h3>
+            <p>I can teach all day</p>
+            <p>Best data analyst</p>
+            <div class="icons">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-github"></a>
+            </div>
+        </div>
+    
+    </div>
+    
+    </section>
+    
+<!-- teacher section ends -->
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/main.js"></script>
+
+<script> function navbarMobile(){
+
+    if(document.getElementById('mobileNavbar').classList[0] ==='hideMobileNavbar')
+
+    {document.getElementById('mobileNavbar').classList.replace('hideMobileNavbar','showMobileNavbar')
+        }
+
+    else{document.getElementById('mobileNavbar').classList.replace('showMobileNavbar','hideMobileNavbar')
+        }
+    }
+  </script>
+
+</body>
+</html>

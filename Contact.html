@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSet</title>
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-graduation-cap"></i>SkillSet</a>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="Home.html" class="active" >home</a></li>
+            <li><a href="About.html" class="active" >about</a></li>
+            <li><a href="Teacher.html" class="active" >teacher</a></li>
+            <li><a href="Courses.html" class="active" >course</a></li>
+            <li><a href="Review.html" class="active" >review</a></li>
+            <li><a href="Contact.html" class="active" >contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="fas fa-bars" id="bars" onclick="navbarMobile()">
+    </div>
+
+  <div class="hideMobileNavbar" id="mobileNavbar">
+       <ul class="mobileNavbarList">
+      <li><a href="Home.html" class="active">home</a></li>
+      <li><a href="About.html" class="active">about</a></li>
+      <li><a href="Teacher.html" class="active">teacher</a></li>
+      <li><a href="Courses.html" class="active">course</a></li>
+      <li><a href="Review.html" class="active">review</a></li>
+      <li><a href="Contact.html" class="active">contact</a></li>
+    </ul>
+  </div>
+    
+    </header>
+    
+<!-- header section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading">contact us</h1>
+    <h3 class="title">we love conversatios, lets talk.</h3>
+    
+    <div class="row">
+    
+        <div class="image">
+            <img src="/img/contact-us.png" alt="">
+        </div>
+    
+        <div class="form-container">
+            <form action="">
+                <input type="text" placeholder="full name">
+                
+                <select class="select">
+                    <option value="select Courses"> Choose your course</option>
+                    <option value="html5">Html5</option>
+                    <option value="css3">css3</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="web development">Web Development</option>
+                    <option value="seo marketing">seo marketing</option>
+                    <option value="graphic design">graphic design</option>
+                    <option value="data analytics">data analytics</option>
+                    <option value="video editing">Video Editing / Videography</option>
+                </select>
+                <input type="email" placeholder="enter your email">
+                <input type="number" placeholder="phone">
+                <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                <input type="submit" value="message">
+            </form>
+        </div>
+    
+    </div>
+    
+    </section>
+    
+<!-- contact section ends -->
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/main.js"></script>
+
+<script> function navbarMobile(){
+
+    if(document.getElementById('mobileNavbar').classList[0] ==='hideMobileNavbar')
+
+    {document.getElementById('mobileNavbar').classList.replace('hideMobileNavbar','showMobileNavbar')
+        }
+
+    else{document.getElementById('mobileNavbar').classList.replace('showMobileNavbar','hideMobileNavbar')
+        }
+    }
+  </script>
+
+</body>
+</html>

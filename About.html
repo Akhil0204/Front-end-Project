@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSet</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-graduation-cap"></i>SkillSet</a>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="Home.html" class="active" >home</a></li>
+            <li><a href="About.html" class="active" >about</a></li>
+            <li><a href="Teacher.html" class="active" >teacher</a></li>
+            <li><a href="Courses.html" class="active" >course</a></li>
+            <li><a href="Review.html" class="active" >review</a></li>
+            <li><a href="Contact.html" class="active" >contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="fas fa-bars" id="bars" onclick="navbarMobile()">
+    </div>
+
+  <div class="hideMobileNavbar" id="mobileNavbar">
+       <ul class="mobileNavbarList">
+      <li><a href="Home.html" class="active">home</a></li>
+      <li><a href="About.html" class="active">about</a></li>
+      <li><a href="Teacher.html" class="active">teacher</a></li>
+      <li><a href="Courses.html" class="active">course</a></li>
+      <li><a href="Review.html" class="active">review</a></li>
+      <li><a href="Contact.html" class="active">contact</a></li>
+    </ul>
+  </div>
+    
+    </header>
+    
+<!-- header section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading">about us</h1>
+    <h3 class="title">start your journey with us</h3>
+    
+    <div class="row">
+    
+        <div class="content">
+            <h3>start your journey to a better life with our practical courses</h3>
+            <p>We are a team, founded by a committed group of volunteers, who are passionate 
+                about bringing quality education to children and transforming communities around 
+                the world.  We provide educational support for individual children, teens and 
+                adults and work to provide educational resources for entire communities in regions 
+                of our world that have suffered from poverty, crisis and natural disaster. Many of 
+                our volunteers work and live or have lived in the communities we serve. Every month 
+                48 volunteers, volunteer approximately 1348 hours. It is because of their dedication 
+                and the dedication of so many others that we have been able to give hope to students, 
+                their families and communities.</p>
+            <a href="#"><button>learn more</button></a>
+        </div>
+    
+        <div class="image">
+            <img src="/img/education-clipart-vector-6.png" alt="">
+        </div>
+    
+    </div>
+    
+    </section>
+    
+<!-- about section ends -->
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/main.js"></script>
+
+<script> function navbarMobile(){
+
+    if(document.getElementById('mobileNavbar').classList[0] ==='hideMobileNavbar')
+
+    {document.getElementById('mobileNavbar').classList.replace('hideMobileNavbar','showMobileNavbar')
+        }
+
+    else{document.getElementById('mobileNavbar').classList.replace('showMobileNavbar','hideMobileNavbar')
+        }
+    }
+  </script>
+
+</body>
+</html>
